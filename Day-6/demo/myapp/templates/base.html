@@ -1,0 +1,19 @@
+<!-- Using the Jinja template engine -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Webpage</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>{% block title %}My Webpage{% endblock %}</h1>
+        <p>{% block content %}Welcome to my webpage!{% endblock %}</p>
+    </div>
+</body>
+
+</html>

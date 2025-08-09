@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Item Detail{% endblock %}
+{% block content %}
+<h4>Item Detail</h4>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.description }}</td>
+    </tr>
+</table>
+{% endblock %}
